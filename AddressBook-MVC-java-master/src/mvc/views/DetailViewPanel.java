@@ -6,6 +6,7 @@ package mvc.views;
 
 import java.awt.Point;
 import javax.swing.JComponent;
+import javax.swing.JTextField;
 
 /**
  *
@@ -49,6 +50,12 @@ public class DetailViewPanel extends javax.swing.JPanel {
       {
           txt_name.setText(name);
       }
+
+    public JTextField getAddressField() {
+        return txt_address;
+    }
+
+    
        public void setMobile(String mobile)
       {
           txt_mobileno.setText(mobile);
@@ -57,7 +64,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
       {
           txt_email.setText(email);
       }
-         public void setaddress(String address)
+         public void setAddress(String address)
       {
           txt_address.setText(address);
       }

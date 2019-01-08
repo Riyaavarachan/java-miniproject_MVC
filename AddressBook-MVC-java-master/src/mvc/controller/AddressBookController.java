@@ -83,7 +83,7 @@ public class AddressBookController {
             String name = contactDetailsPanel.getNameField().getText();
             String mobile = contactDetailsPanel.getMobileField().getText();
             String email = contactDetailsPanel.geteMailField().getText();
-            String address = contactDetailsPanel.geteAddressField().getText();
+            String address = contactDetailsPanel. getAddressField().getText();
             flag = validate();
             if(flag)
             {    
@@ -160,7 +160,7 @@ public class AddressBookController {
         dialog.getPanel().setName(detailPanel.getNameField().getText());
         dialog.getPanel().setMobile(detailPanel.getMobileField().getText());
         dialog.getPanel().seteMail(detailPanel.geteMailField().getText());
-        dialog.getPanel().seteaddress(detailPanel.geteaddressField().getText());
+        dialog.getPanel().setAddress(detailPanel.getAddressField().getText());
         view.getMainGUIFrame().setVisible(false);
         choiceListener = new ActionListener() {
             @Override
@@ -172,7 +172,7 @@ public class AddressBookController {
                 String name = contactDetailsPanel.getNameField().getText();
                 String mobile = contactDetailsPanel.getMobileField().getText();
                 String email = contactDetailsPanel.geteMailField().getText(); 
-                String address = contactDetailsPanel.geteaddressField().getText(); 
+                String address = contactDetailsPanel.getAddressField().getText(); 
                 flag = validate();
                 if(flag)
                 {    

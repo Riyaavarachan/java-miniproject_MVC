@@ -42,12 +42,16 @@ public class Person {
     
     public String getEmail(){
         return this.email; 
-   }
+    }
+  public String getAddress(){
+      return this.address;
+  }
     
-    public void setData(String name, String mob,String email){
+    public void setData(String name, String mob,String email,String Address){
         this.name = name;
         this.mob = mob;
         this.email = email;
+        this.address = Address;
     }
     
  

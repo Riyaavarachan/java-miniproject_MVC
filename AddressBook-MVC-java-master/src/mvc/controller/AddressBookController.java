@@ -146,9 +146,14 @@ public class AddressBookController {
         boolean valid = false;
         String name = contactDetailsPanel.getNameField().getText();
         String mobile = contactDetailsPanel.getMobileField().getText();
-        if (name==null||name.equals("")||(mobile==null||mobile.equals("")))
-            JOptionPane.showMessageDialog(new JFrame(), "Fields Marked as * are Mandatory","Inane error", JOptionPane.ERROR_MESSAGE);
-        else 
+        String address= contactDetailsPanel.getAddressField().getText();
+       if(name==null||name.equals(""))
+          JOptionPane.showMessageDialog(new JFrame(), "Enter your name","Inane error", JOptionPane.ERROR_MESSAGE);
+       else if(mobile==null||mobile.equals(""))
+               JOptionPane.showMessageDialog(new JFrame(), "Enter your mobile","Inane error", JOptionPane.ERROR_MESSAGE);
+       else if(address==null||address.equals(""))      
+           JOptionPane.showMessageDialog(new JFrame(), "Enter your address","Inane error", JOptionPane.ERROR_MESSAGE);
+               
             valid = true;
         return valid;
                

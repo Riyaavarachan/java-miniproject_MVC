@@ -125,7 +125,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
 
         txt_email.setName("txt_email"); // NOI18N
 
-        jLabel4.setText("Address");
+        jLabel4.setText("Address*");
 
         txt_address.setName("txt_Address"); // NOI18N
         txt_address.addActionListener(new java.awt.event.ActionListener() {
